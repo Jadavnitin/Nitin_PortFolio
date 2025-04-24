@@ -63,6 +63,10 @@ const EducationDetails = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+ @media (max-width:480px){
+    width:100%;
+  }
 `;
 
 const SchoolHeader = styled.div`
@@ -70,6 +74,12 @@ const SchoolHeader = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
+  
+   @media (max-width:480px){
+    flex-direction: column-reverse;
+    width:100%;
+  }
+  
 `;
 
 const SchoolNameLink = styled.a`
@@ -85,6 +95,9 @@ const SchoolNameLink = styled.a`
   @media (min-width: 640px) {
     font-size: 1.125rem;
   }
+   @media (max-width:480px){
+    align-self: flex-start;
+  }
 `;
 
 const MobileOnlyDate = styled.p`
@@ -93,6 +106,9 @@ const MobileOnlyDate = styled.p`
 
   @media (min-width: 640px) {
     display: none;
+  }
+   @media (max-width:480px){
+    width:100%;
   }
 `;
 
@@ -125,6 +141,8 @@ const Wrapper = styled.section`
   flex-direction: column;
   gap: 0.75rem;
   padding: 0rem 1rem 1rem 1rem;
+  
+  
 `;
 
 const EducationContainer = styled.div`
@@ -135,6 +153,9 @@ const EducationContainer = styled.div`
   @media (min-width: 768px) {
     flex-direction: column;
     justify-content: space-between;
+  }
+   @media (max-width: 480px) {
+     gap:1rem;
   }
 `;
 

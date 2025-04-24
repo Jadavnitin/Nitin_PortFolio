@@ -110,7 +110,7 @@ const languageContent = {
 
    technologiesText: {
       en: {
-         filters: ["Language", "FrameWork", "Library", "Database", "Devlopment Tools", "Api & Integration"]
+         filters: ["Language", "FrameWork", "Library", "Database", "Devlopment Tools", "API & Integration"]
       },
       hi: {
          filters: ["भाषा", "फ्रेमवर्क", "पुस्तकालय", "डेटाबेस", "विकास उपकरण", "एपीआई और एकीकरण"]

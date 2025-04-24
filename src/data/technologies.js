@@ -22,21 +22,21 @@ const techs = [
    { name: "Styled Components", icon: "/styled-components.svg", url: 'https://styled-components.com/', category: { en: 'Library', hi: 'पुस्तकालय' } },
 
    // Framework
-   { name: 'Express.js', icon: 'devicon-express-original colored', url: 'https://expressjs.com/', category: { en: 'Framework', hi: 'फ्रेमवर्क' } },
+   { name: 'Express.js', icon: 'devicon-express-original colored', url: 'https://expressjs.com/', category: { en: 'FrameWork', hi: 'फ्रेमवर्क' } },
 
    // Database
    { name: 'MongoDb', icon: 'devicon-mongodb-plain colored', url: 'https://www.mongodb.com/', category: { en: 'Database', hi: 'डेटाबेस' } },
 
    // Development Tools
-   { name: 'Babel', icon: 'devicon-babel-plain colored', url: 'https://babeljs.io/', category: { en: 'Development Tools', hi: 'विकास उपकरण' } },
-   { name: 'NPM', icon: 'devicon-npm-original-wordmark colored', url: 'https://www.npmjs.com/', category: { en: 'Development Tools', hi: 'विकास उपकरण' } },
-   { name: 'Nodemon', icon: 'devicon-nodemon-plain colored', url: 'https://nodemon.io/', category: { en: 'Development Tools', hi: 'विकास उपकरण' } },
-   { name: 'VS Code', icon: 'devicon-vscode-plain colored', url: 'https://code.visualstudio.com/', category: { en: 'Development Tools', hi: 'विकास उपकरण' } },
-   { name: 'Github', icon: 'devicon-github-original colored', url: 'https://github.com/', category: { en: 'Development Tools', hi: 'विकास उपकरण' } },
-   { name: 'Vercel', icon: 'devicon-vercel-original colored', url: 'https://vercel.com/', category: { en: 'Development Tools', hi: 'विकास उपकरण' } },
-   { name: 'Netlify', icon: 'devicon-netlify-plain colored', url: 'https://www.netlify.com/', category: { en: 'Development Tools', hi: 'विकास उपकरण' } },
-   { name: 'Window', icon: 'devicon-windows11-original colored', url: 'https://www.microsoft.com/windows', category: { en: 'Development Tools', hi: 'विकास उपकरण' } },
-   { name: 'Canva', icon: 'devicon-canva-original colored', url: 'https://www.canva.com/', category: { en: 'Development Tools', hi: 'विकास उपकरण' } },
+   { name: 'Babel', icon: 'devicon-babel-plain colored', url: 'https://babeljs.io/', category: { en: 'Devlopment Tools', hi: 'विकास उपकरण' } },
+   { name: 'NPM', icon: 'devicon-npm-original-wordmark colored', url: 'https://www.npmjs.com/', category: { en: 'Devlopment Tools', hi: 'विकास उपकरण' } },
+   { name: 'Nodemon', icon: 'devicon-nodemon-plain colored', url: 'https://nodemon.io/', category: { en: 'Devlopment Tools', hi: 'विकास उपकरण' } },
+   { name: 'VS Code', icon: 'devicon-vscode-plain colored', url: 'https://code.visualstudio.com/', category: { en: 'Devlopment Tools', hi: 'विकास उपकरण' } },
+   { name: 'Github', icon: 'devicon-github-original colored', url: 'https://github.com/', category: { en: 'Devlopment Tools', hi: 'विकास उपकरण' } },
+   { name: 'Vercel', icon: 'devicon-vercel-original colored', url: 'https://vercel.com/', category: { en: 'Devlopment Tools', hi: 'विकास उपकरण' } },
+   { name: 'Netlify', icon: 'devicon-netlify-plain colored', url: 'https://www.netlify.com/', category: { en: 'Devlopment Tools', hi: 'विकास उपकरण' } },
+   { name: 'Window', icon: 'devicon-windows11-original colored', url: 'https://www.microsoft.com/windows', category: { en: 'Devlopment Tools', hi: 'विकास उपकरण' } },
+   { name: 'Canva', icon: 'devicon-canva-original colored', url: 'https://www.canva.com/', category: { en: 'Devlopment Tools', hi: 'विकास उपकरण' } },
 
    // API & Integration
    { name: 'axios', icon: 'devicon-axios-plain colored', url: 'https://axios-http.com/', category: { en: 'API & Integration', hi: 'एपीआई और एकीकरण' } },

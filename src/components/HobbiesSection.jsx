@@ -48,15 +48,12 @@ const HobbyButton = styled.button`
   align-items: center;
   justify-content: space-evenly;
   width: 6rem;
-  flex-direction: column;
+  flex-direction:column;
   height: 6rem;
   padding: 0.125rem;
   border-radius: 0.375rem;
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-align: center;
- font-size: .75rem;
- line-height: 1rem;
+  font-size: .75rem;
+  line-height: 1rem;
   font-weight:700;
   background-color: ${({ theme }) => theme.projectCardBc};
   border: ${({ theme }) => theme.projectCardBorder};
@@ -73,7 +70,16 @@ const HobbyButton = styled.button`
       width: 7rem;
       height: 7rem;
     }
-
+    
+    @media (max-width: 480px) {
+    width:9rem;
+    height:9rem;
+  }
+    @media (max-width:420px) {
+    width:100%;
+    justify-content: center;
+    gap:0.75rem;
+  }
 `;
 
 const StyledIcon = styled(Icon)`
@@ -95,11 +101,14 @@ const Wrapper = styled.section`
 
 const HobbiesContainer = styled.div`
   display: flex;
-  gap:0.75rem;
+  gap:1.25rem;
   flex-direction: column;
 
   @media (min-width: 768px) {
     justify-content: space-between;
+  }
+   @media (max-width:480px) {
+    gap:1rem;
   }
 `;
 

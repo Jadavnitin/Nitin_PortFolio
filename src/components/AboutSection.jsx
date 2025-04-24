@@ -59,8 +59,8 @@ const AboutContainer = styled.div`
     gap: 1.25rem;
   }
 
-  @media (max-width: 325px) {
-    gap: 1rem;
+  @media (max-width:480px) {
+    gap:1rem;
   }
 `;
 
@@ -113,6 +113,7 @@ const AboutText = styled.p`
   font-size: 0.999rem;
   line-height: 1.5rem;
   max-width: 100%;
+  text-align: justify;
 
   @media (max-width: 580px) {
     font-size: 0.95rem;
@@ -121,6 +122,7 @@ const AboutText = styled.p`
   @media (max-width: 480px) {
     font-size: 0.9rem;
     line-height: 1.4rem;
+    word-spacing:-0.15rem;
   }
 
   @media (max-width: 325px) {

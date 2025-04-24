@@ -38,6 +38,7 @@ const CertificationSection = () => {
               >
                 {cert.title[isLanguage === "hi" ? 'hi' : 'en']}
               </Title>
+              
 
               {cert.descriptions[isLanguage === "hi" ? 'hi' : 'en'].map((desc, i) => (
                 <Description
@@ -73,9 +74,7 @@ const CertificationSection = () => {
             </RightSection>
           </Container>
         ))}
-
-        
-        
+ 
         </CertificationContainer>
      </Wrapper>
   )
@@ -89,6 +88,10 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: start;
   gap: 1.5rem;
+  
+   @media (max-width:450px){
+    flex-direction: column-reverse;
+  }
 `;
 
 const LeftSection = styled.div`
@@ -97,6 +100,12 @@ const LeftSection = styled.div`
   align-items: flex-start;
   gap: 0.5rem;
   width: 75%;
+  
+  @media (max-width:480px){
+    width:100%;
+    text-align:justify;
+    word-spacing: -0.15rem;
+  }
 
 `;
 
@@ -105,6 +114,7 @@ const Title = styled.a`
   font-weight: bold;
   text-decoration: none;
   color: inherit;
+  white-space: nowrap;
 
   &:hover {
     text-decoration: underline;
@@ -113,8 +123,14 @@ const Title = styled.a`
     font-size:1.115rem;
   }
   
+  @media (max-width:380px){
+    white-space:wrap;
+    text-align:left;
+  }
+ 
    @media (max-width:325px){
     font-size:1.10rem;
+    
   }
 `;
 
@@ -128,8 +144,6 @@ const Description = styled.p`
     margin-top: 0.5rem;
   }
   
- 
-  
 `;
 
 const RightSection = styled.div`
@@ -138,6 +152,12 @@ const RightSection = styled.div`
   align-items: flex-end;
   justify-content: flex-start;
   gap: 0.125rem;
+  
+   @media (max-width:480px){
+    width:100%;
+    align-items:center;
+    gap: 0.750rem;
+  }
 `;
 
 const Date = styled.p`
@@ -147,6 +167,7 @@ const Date = styled.p`
   
   @media (max-width:480px) {
    font-size: 0.850rem; 
+   align-self: flex-end;
   }
 `;
 
@@ -160,8 +181,9 @@ const BadgeLink = styled.a`
 `;
 
 const BadgeImage = styled.img`
-  width: 6rem;
-  height: 6rem;
+  width:9rem;
+  height:9rem;
+  
   
 `;
 
@@ -169,12 +191,15 @@ const ExternalIcon = styled.svg`
   position: absolute;
   top:6.5rem;
   left:-1rem;
-  width: 1.25rem;
+  width:1.25rem;
   height: 1.25rem;
   opacity: 0;
   transition: opacity 0.3s ease;
   color: ${({ theme }) => theme.text};
  
+    @media (max-width:480px) {
+   left:-2rem;
+  }
 `;
 
 
@@ -215,6 +240,9 @@ const Wrapper = styled.section`
   flex-direction: column;
   gap: 0.75rem;
   padding: 0rem 1rem 1rem 1rem;
+  
+ 
+  
 `;
 
 const CertificationContainer = styled.div`
@@ -225,6 +253,9 @@ const CertificationContainer = styled.div`
   @media (min-width: 768px) {
     flex-direction: column;
     justify-content: space-between;
+  }
+   @media (max-width:480px) {
+    gap:1rem;
   }
 `;
 
@@ -255,7 +286,9 @@ const CertificationLinkIcon = styled(Icon)`
 const CertificationName = styled.h2`
   position: relative;
   color: ${({ theme }) => theme.text};
-
+  font-size: 1.75rem;
+  
+  
   @media (max-width: 480px) {
     font-size: 1.5rem;
   }

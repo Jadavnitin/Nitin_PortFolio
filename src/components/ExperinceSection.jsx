@@ -84,6 +84,10 @@ const ExperienceContainer = styled.div`
     flex-direction: column;
     justify-content: space-between;
   }
+  
+  @media (max-width:480px) {
+    gap:1rem;
+  }
 `;
 
 const ExperienceHeader = styled.div`
@@ -157,6 +161,10 @@ const LeftColumn = styled.div`
   flex-direction: column;
   gap: 0.25rem;
   align-items: flex-start;
+  
+ @media (max-width:480px) {
+    gap: 0.5rem;
+  }
 `;
 
 const LinkRow = styled.div`
@@ -203,7 +211,7 @@ const RightColumn = styled.div`
 const MobileDate = styled.p`
   font-size: 0.875rem;
   color: ${({ theme }) => theme.text};
-
+  text-align: justify;
   @media (min-width: 640px) {
     display: none;
   }
@@ -211,7 +219,13 @@ const MobileDate = styled.p`
 
 const Description = styled.p`
   font-size: 0.75rem;
+  text-align: justify;
+  line-height: 1rem;
   color: ${({ theme }) => theme.secondaryText};
+  
+   @media (max-width:480px) {
+    word-spacing:-0.15rem;
+  }
 `;
 
 const TechHeader = styled.p`

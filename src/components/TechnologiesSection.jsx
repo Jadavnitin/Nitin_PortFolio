@@ -91,8 +91,8 @@ const TechCard= styled.a`
   gap: 0.25rem;
   padding: 0.125rem;
   border-radius: 0.375rem;
- font-size: .75rem;
- line-height: 1rem;
+  font-size: .75rem;
+  line-height: 1rem;
   font-weight:700;
   background-color: ${({ theme }) => theme.projectCardBc};
   border: ${({ theme }) => theme.projectCardBorder};
@@ -107,6 +107,16 @@ const TechCard= styled.a`
 
   i {
     font-size: 3rem;
+  }
+  
+  @media (max-width: 480px) {
+    width:9rem;
+    height:9rem;
+  }
+  
+   @media (max-width:420px) {
+    width:100%;
+    gap:0.75rem;
   }
 `;
 
@@ -140,6 +150,10 @@ const ButtonGroup = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 0.25rem;
+  
+  @media (max-width: 480px) {
+    gap:0.5rem;
+  }
 `;
 
 const StyledButton = styled.button`
@@ -160,7 +174,7 @@ const StyledButton = styled.button`
 
   &:hover {
     background-color: ${({ theme }) => theme.hoverProjectBtn};
-  }
+  }  
 `;
 
 const Wrapper = styled.section`

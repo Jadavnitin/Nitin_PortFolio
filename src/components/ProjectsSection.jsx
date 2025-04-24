@@ -142,6 +142,11 @@ const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  
+   @media (max-width:480px) {
+    gap:1rem;
+  }
+  
 `;
 
 const LinkWrapper = styled.a`

@@ -111,6 +111,12 @@ const IntroductionContainer = styled.div`
     align-items: center;
     justify-content: space-between;
   }
+   @media (max-width:480px) {
+    gap:1rem;
+    flex-direction: column-reverse;
+  }
+  
+  
 `;
 
 const InfoSection = styled.div`
@@ -172,13 +178,6 @@ const Description = styled.p`
     font-size: 0.95rem;
   }
 
-  @media (max-width: 480px) {
-    font-size: 0.9rem;
-  }
-
-  @media (max-width: 325px) {
-    font-size: 0.85rem;
-  }
 `;
 
 const Location = styled.p`
@@ -258,6 +257,7 @@ const PhotoWrapper = styled.div`
   @media (min-width: 768px) {
     justify-content: flex-end;
   }
+  
 `;
 
 const Photo = styled.img`
@@ -274,14 +274,11 @@ const Photo = styled.img`
   }
 
   @media (max-width: 480px) {
-    width: 6rem;
-    height: 6rem;
+    width:12rem;
+    height:12rem;
   }
 
-  @media (max-width: 325px) {
-    width: 5rem;
-    height: 5rem;
-  }
+
 
   &:hover {
     transform: scale(1.05);

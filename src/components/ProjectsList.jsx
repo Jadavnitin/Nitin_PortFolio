@@ -136,16 +136,6 @@ const TechStack = styled.div`
   gap: 1rem;
   color: #52525b;
   
-  @media  (max-width:633px){
-    gap:0.6rem;
-  }
-  
-   @media  (max-width:480px){
-    gap:0.3rem;
-  }
-   @media  (max-width:325px){
-    gap:0.15rem;
-  }
 `;
 
 const TechStackAndYear = styled.div`
@@ -153,6 +143,12 @@ const TechStackAndYear = styled.div`
   justify-content: space-between;
   width: 100%;
   align-items: center;
+  
+  
+   @media (max-width:480px) {
+     flex-direction: column-reverse;
+     gap:0.75rem;
+  }
 `;
 
 
@@ -211,6 +207,10 @@ const Description = styled.p`
   @media (max-width:637px) {
    width:100%;
   }
+   @media (max-width:480px) {
+    word-spacing:-0.15rem;
+  }
+  
 `;
 
 const LinksContainer = styled.div`
@@ -260,6 +260,10 @@ const Footer = styled.div`
   flex-direction: column;
   align-items: flex-end;
   gap: 0.125rem;
+  
+  @media (max-width:480px) {
+   width:100%;
+  }
 `;
 
 const Year = styled.p`
@@ -267,6 +271,10 @@ const Year = styled.p`
   color: #52525b;
   
   @media (max-width:637px) {
+   align-self: flex-end;
+  }
+  
+   @media (max-width:480px) {
    align-self: flex-end;
   }
 `;
