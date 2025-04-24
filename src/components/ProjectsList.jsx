@@ -202,6 +202,7 @@ const Description = styled.p`
   line-height: 1rem;
   width: 50%;
   text-align: justify;
+  hyphens: auto;
   color: ${({ theme }) => theme.secondaryText};
   
   @media (max-width:637px) {

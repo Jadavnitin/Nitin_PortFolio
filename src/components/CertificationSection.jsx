@@ -100,10 +100,11 @@ const LeftSection = styled.div`
   align-items: flex-start;
   gap: 0.5rem;
   width: 75%;
+  text-align:justify;
+  hyphens: auto;
   
   @media (max-width:480px){
     width:100%;
-    text-align:justify;
     word-spacing: -0.15rem;
   }
 

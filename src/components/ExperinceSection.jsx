@@ -212,6 +212,7 @@ const MobileDate = styled.p`
   font-size: 0.875rem;
   color: ${({ theme }) => theme.text};
   text-align: justify;
+  hyphens: auto;
   @media (min-width: 640px) {
     display: none;
   }
@@ -220,6 +221,7 @@ const MobileDate = styled.p`
 const Description = styled.p`
   font-size: 0.75rem;
   text-align: justify;
+  hyphens: auto;
   line-height: 1rem;
   color: ${({ theme }) => theme.secondaryText};
   

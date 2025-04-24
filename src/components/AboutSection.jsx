@@ -114,6 +114,7 @@ const AboutText = styled.p`
   line-height: 1.5rem;
   max-width: 100%;
   text-align: justify;
+  hyphens: auto;
 
   @media (max-width: 580px) {
     font-size: 0.95rem;
